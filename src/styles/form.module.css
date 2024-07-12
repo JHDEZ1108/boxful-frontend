@@ -1,0 +1,16 @@
+/* form.module.css */
+.customLabel {
+  font-weight: 600;
+  color: #7682A0 !important; 
+}
+
+.customDatePicker .ant-picker-input > input {
+  padding-left: 32px;
+}
+
+.customDatePicker .ant-picker-suffix {
+  position: absolute;
+  left: 8px; 
+  top: 50%;
+  transform: translateY(-50%);
+}
