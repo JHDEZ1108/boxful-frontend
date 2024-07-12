@@ -24,7 +24,7 @@ class MyDocument extends Document {
           {/* Meta etiquetas útiles para SEO */}
           <meta charSet="utf-8" />
           <meta name="description" content="Este proyecto es parte de una prueba técnica y consiste en un frontend desarrollado con Next.js y TypeScript." />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/BoxfulIco.ico" />
         </Head>
         <body>
           <Main />
