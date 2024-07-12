@@ -40,4 +40,3 @@ Visita `http://localhost:3000` para ver la aplicación en acción.
 ---
 
 Este documento y el código fuente están destinados a demostrar las habilidades en desarrollo web para Boxful.
-```
