@@ -1,4 +1,7 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { setStep1Data } from '../../slices/formSlice';
+import { useRouter } from 'next/router';
 import { Button, Form, Input, DatePicker, Row, Col, Card, Select } from 'antd';
 import { ArrowRightOutlined, EnvironmentFilled, CalendarFilled } from '@ant-design/icons';
 import styles from '../../styles/form.module.css';
@@ -7,12 +10,15 @@ import { Step1FormValues } from '../../types/step1Types';
 const { TextArea } = Input;
 const { Option } = Select;
 
+const CardFormStep1: React.FC = () => {
+  const dispatch = useDispatch();
+  const router = useRouter();
 
-interface CardFormStep1Props {
-  onFinish: (values: Step1FormValues) => void;
-}
+  const onFinish = (values: Step1FormValues) => {
+    dispatch(setStep1Data(values));
+    router.push('/step2');
+  };
 
-const CardFormStep1: React.FC<CardFormStep1Props> = ({ onFinish }) => {
   return (
     <Card bordered={false}>
       <Form layout="vertical" onFinish={onFinish} requiredMark={false}>
